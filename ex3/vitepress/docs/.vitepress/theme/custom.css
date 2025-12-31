@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2a0033);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.VPButton.brand {
+  background-color: #ff4dff;
+  color: black;
+  box-shadow: 0 0 20px #ff4dff;
+  transition: 0.3s;
+}
+
+.VPButton.brand:hover {
+  box-shadow: 0 0 35px #ff9dff;
+  transform: scale(1.08);
+}
+
+.VPNav {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #ff4dff55;
+}
+
+.VPFeature {
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border: 1px solid #ff4dff55;
+  box-shadow: 0 0 25px #ff4dff33;
+  transition: 0.3s;
+}
+
+.VPFeature:hover {
+  box-shadow: 0 0 40px #ff4dff88;
+  transform: translateY(-6px);
+}
+
+.VPNav .VPNavBar .VPNavBarTitle .VPImage {
+  height: 64px; 
+}
